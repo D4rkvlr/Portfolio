@@ -1,0 +1,160 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bb0982dbb8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Yakymenko Artem - Portfolio</title>
+</head>
+<body>
+    <!-- Main Column Montain-->
+    <div class="main-container">
+        <div class="columms">
+            <div class="left column">
+<!-- Logo-->
+                <div class="logo">
+                    <h3>Моє порт<span>фоліо</span></h3>
+                </div>
+<!-- Navigation-->
+                <div class="navlinks">
+                    <ul>
+                        <li><a href="#home">Головна сторінка</a></li>
+                        <li><a href="#about">Про мене</a></li>
+                        <li><a href="#skills">Вивчені предмети</a></li>
+                        <li><a href="#">Не завершено ще</a></li>
+                        <li><a href="#">Не завершено ще</a></li>
+                        <li><a href="#contacts">Залиште відгук</a></li>
+                    </ul>
+                </div>
+<!-- Footer--> 
+                <div class="footer">
+                    <span>&copy 2024 || Made by FizMat</span>
+                </div>
+            </div>
+
+            <div class="right column">
+                <div class="avator" id="home">
+                    <div class="photo">
+                        <img src="{% static 'media/man.png'%}" alt="">
+
+                    </div>
+                    <div class="text-typing">
+                        <h2>Я студент <span id="typing"></span></h2>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-telegram"></i>
+                        <i class="fa-brands fa-discord"></i>
+                    </div>
+
+                    <div class="hire">
+                        <button>Дізнатись більше</button>
+                    </div>
+                </div>
+<!-- About me-->
+                <div class="about" id="about">
+                    <div class="photo">
+                        <img src="{% static 'media/man.png'%}" alt="">
+                    </div>
+
+                    <div class="desc">
+                        <h3>Про мене</h3>
+                        <p>
+                            Я навчаюся в Тернопільському національному педагогічному 
+                            університеті імені Володимира Гнатюка на фізико-математичному факультеті.
+                            Зараз я 4-й рік студент і вже здобув значний обсяг знань та навичок у різних дисциплінах.
+
+                            </p>
+                            <div class="sience">
+                                <ul>
+                                    <li>Серед вивчених дисциплін:</li>
+                                    <li>Теорія ймовірностей</li>
+                                    <li>Методи оптимізації</li>
+                                    <li>Програмування на Python, C++, c#</li>
+                                    <li>Обчислювальна математика</li>
+                                    <li>Веб-розробка (HTML, CSS, JavaScript)</li>
+                                    <li>Теоретична механіка</li>
+                                    <li>Моделювання</li>
+                                    <li>Математичний аналіз</li>
+                                    <li>Та багато інших</li>
+                                </ul>
+                            </div>
+                        <p>
+                            Мої навички:
+                            
+                            Створення веб-сайтів та додатків із використанням Django.
+                            Розробка алгоритмів для розв'язання прикладних задач.
+                            Робота з базами даних.
+                            Використання інструментів для візуалізації даних.
+                            Я завжди відкритий до нових знань, цікавлюся технологіями та наукою, 
+                            а також маю досвід роботи над навчальними проєктами. Моя мета — стати 
+                            висококваліфікованим спеціалістом, який поєднує аналітичні здібності та
+                            навички програмування для вирішення складних завдань.                           
+                        </p>
+                        <button>Мої проекти на GitHub</button>
+                    </div>
+                </div>
+                <div class="skills" id="skills">
+
+                    <h3>Здобуті навички цього семестру цього семестру</h3>
+
+                    <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-success" style="width: 70%">Мультимедійні технології - 70 балів</div>
+                      </div>
+                      <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-info text-dark" style="width: 82%">Розробка серверного ПЗ - 82 бали</div>
+                      </div>
+                      <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-warning text-dark" style="width: 60%">Чисельні методи - 60 балів</div>
+                      </div>
+                      <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-warning text-dark" style="width: 60%">Управління ігровими проєктами - 60 балів</div>
+                      </div>
+                      <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-success" style="width: 75%">Аналіз та візуалізація даних - 75 балів</div>
+                      </div>
+                      <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-danger" style="width: 100%">Проєктно-технологічна практика - ? балів</div>
+                      </div>
+                </div>
+<!-- Contact--> 
+                <h2 class="text">Залиште відгук</h2>
+
+                <div class="contacts" id="contacts">
+                    <form action="{% url 'contact'%}" method="post">
+                        {% csrf_token %}
+
+                        <div class="form-group">
+                            <label for="name">ВВедіть ім'я</label>
+                            <input type="text" id="name" name="name" placeholder="Введіть ваше повне ім'я тут..." required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">ВВедіть емейл</label>
+                            <input type="email" id="email" name="email" placeholder="Введіть ваш email тут..." required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">ВВедіть тему</label>
+                            <input type="text" id="subject" name="subject" placeholder="Введіть вашу тему тут..." required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="massage">ВВедіть повідомлення</label>
+                            <textarea name="massage" id="massage" cols="30" rows="10" placeholder="Введіть ваше повідомлення тут ..." required></textarea>
+                        </div>
+
+                        <button type="submit">Підтвердити</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+ <script src="{% static 'main.js' %}"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
